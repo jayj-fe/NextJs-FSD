@@ -1,0 +1,1 @@
+# 상수 모음 (routes, configs 등)
