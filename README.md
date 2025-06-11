@@ -13,20 +13,35 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ```js
 /
 ├── app/                                 # ✅ Next.js 13+ App Router (Next 전용 폴더)
-│  └── login/
-│      └── pages.ts
+│  ├── home/   
+│  │  └── pages.ts
+│  ├── login/
+│  │  └── pages.ts
+│  ├── layout.tsx
+│  └── page.tsx 
 ├── pages/                               # Stub: Next.js가 요구하는 pages 디렉토리 (CSR, API Route 등)
+│  └── README.md
 ├── public/                              # 정적 파일
 └── src/                                 # ✅ 실제 FSD 기반 소스코드 위치
     ├── app/                             # FSD의 "앱 초기화 계층" (라우터, Provider 등)
     │   ├── layouts/
+    │   │  └── index.tsx
     │   └── providers/
+    │       └── index.tsx
     ├── pages/                           # FSD pages folder - 라우트 단위 페이지 구성
+    │   ├── home/
+    │   │   ├── index.ts
+    │   │   └── ui/
+    │   │       └── HomePage.tsx
     │   └── login/
     │       ├── index.ts
     │       └── ui/
-    │           └── loginPage.tsx
+    │           └── LoginPage.tsx
     ├── widgets/                         # 페이지 구성 단위의 복합 UI(features + entities)
+    │   ├── layout/
+    │   │   ├── index.ts
+    │   │   └── ui/
+    │   │       └── Navbar.tsx
     │   └── login/
     │       ├── index.ts
     │       └── ui/
