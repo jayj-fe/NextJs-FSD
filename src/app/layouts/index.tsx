@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Navbar } from '@/widgets/login/layout/Navbar';
+import { Navbar } from '@/widgets/layout';
 import { Providers } from '@/app/providers';
 
 export const metadata = {
